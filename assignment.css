@@ -1,0 +1,790 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+    font-size: 20px;
+    margin: 2px;
+    width: 100%;
+}
+
+.Header {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(57, 126, 50);
+
+}
+
+.HeaderContainer {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* header link styling*/
+.HeaderLink {
+    margin-right: 1rem;
+}
+
+a.HeaderLink:link {
+    color: white;
+    text-decoration: none;
+}
+  
+a.HeaderLink:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+a.HeaderLink:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+  
+a.HeaderLink:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.Language {
+    width: 10rem;
+    height: 2rem;
+    text-align: right;
+    border: gray;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.Menu {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+}
+
+.MenuContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.LianatechLogo {
+    width: 12rem;
+    margin-right: 2rem;
+}
+
+.Title {
+    color: gray;
+    margin-left: 2rem;
+}
+
+/* menu link styling*/
+
+
+a.Title:link {
+    color: gray;
+    text-decoration: none;
+}
+  
+a.Title:visited {
+    color: gray;
+    text-decoration: none;
+}
+  
+a.Title:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+  
+a.Title:active {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.Search {
+    justify-content: end;
+}
+
+.SearchInput {
+    height: 2rem;
+    width: 10rem;
+    border: solid gray 1px;
+    border-radius: 4px;
+    text-align: left;
+    font-size: 1rem
+}
+
+.SearchButton {
+    height: 2.3rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(57, 126, 50);
+    border: solid rgb(57, 126, 50) 1px;
+    border-radius: 4px;
+}
+
+
+/*button styling*/
+.SearchButton:hover {
+    background-color: rgb(41, 88, 35);
+    color: white;
+}
+
+.Focus {
+    background-image: url(https://www.lianatech.com/media/hero-images/cache/marketing-technology-stack-1920x500,c,q=85.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.FocusTxt {
+    width: 60%;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.FocusButton {
+    height: 3rem;
+    width: 15rem;
+    color: white;
+    background-color: rgb(57, 126, 50);
+    border-radius: 8px;
+    border: solid rgb(57, 126, 50) 1px;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+    font-size: 1.5rem;
+}
+
+.FocusButton:hover{
+    background-color: rgb(41, 88, 35);
+}
+
+.Parallex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.BlockContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+div.Block {
+    margin-top: 5rem;
+    height: 200px;
+    border-radius: 16px;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+}
+
+.BlockLink {
+    text-decoration: none;
+    width: 25%;
+}
+
+.Block:link {
+    color: white;
+    text-decoration: none;
+}
+  
+.Block:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+.Block:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+  
+.Block:active {
+    color: white;
+    text-decoration: none;
+}
+
+div.Company {
+    background-image: url(company.jpeg);
+    background-size: cover;
+}
+
+div.Products {
+    background-image: url(products.jpeg);
+    background-size: cover;
+}
+
+div.Contact {
+    background-image: url(contact.jpeg);
+    background-size: cover;
+}
+
+.Statistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+}
+
+
+.StaContainer {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    width: 30%;
+}
+
+.icon {
+    height: 100px;
+    width: 50%;
+}
+
+.StaTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.StaNum {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.StaName {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.News {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.BlockTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+#divRss {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.RssBlock {
+    width: 30%;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+}
+
+.itemDate {
+
+    font-size: 1rem;
+    color: gray;
+}
+
+.itemTitle {
+    margin-top: 1rem;
+}
+
+.RssLink {
+    color: black;
+    text-decoration: none;
+}
+
+.RssLink:link {
+    text-decoration: none;
+}
+  
+.RssLink:visited {
+    text-decoration: none;
+}
+  
+.RssLink:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+  
+.RssLink:active {
+    text-decoration: none;
+}
+
+.References {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.RefContainer {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.RefBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 20%;
+}
+
+.RefPicContainer{
+    height: 180px;
+    margin-top: 3rem;
+    border: 1px solid gray;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+}
+
+.RefPic {   
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.RefCon {
+    height: 160px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 0 0 6px 6px;
+    padding: 8px;
+}
+
+.RefName {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.RefDes {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.Subscribe {
+    display: flex;
+    flex-direction: column;
+    border-top: gray;
+    justify-content: start;
+    align-items: center;
+}
+
+.SubDes {
+    margin-top: 2rem;
+    color: gray;
+    width: 50%;
+    text-align: center;
+}
+
+.SubFunc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.Foot {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.FootContainer {
+    color: white;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+.LeftFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 200px;
+}
+.ComName {
+    font-size: 1.5rem;
+}
+.ConInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.ConTex {
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.duty {
+    font-size: 1.2rem;
+}
+
+.email, .phone {
+    color: lightgray;
+    font-size: .9rem;
+}
+
+.RightFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    width: 75%;
+}
+
+.FootLinkContainer {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.FootLink {
+    margin-left: 1.5rem;
+}
+
+a.FootLink:link {
+    color: white;
+    text-decoration: none;
+}
+  
+a.FootLink:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+a.FootLink:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+  
+a.FootLink:active {
+    color: white;
+    text-decoration: underline;
+}
+
+.SocialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.IconContainer {
+    margin-top: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(57, 126, 50);
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fb, .Tw {   
+    display: block;
+    height: 20px;
+}
+
+.Lki {
+    display: block;
+    height: 40px;
+}
+
+@media screen and (max-width: 960px){ /*menu is the first section to dislocate which start from 951px*/
+    .Header {
+        height: 20%;
+    
+    }
+
+    .HeaderContainer {
+        justify-content: center;
+    }
+    
+    .Menu {
+        width: 85%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .MenuContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .Title {
+        color: gray;
+        margin-top: 1rem;
+    }
+
+    .Search {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    .Focus {
+        background-image: url(https://www.lianatech.com/media/hero-images/cache/marketing-technology-stack-1920x500,c,q=85.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .FocusTxt {
+        width: 60%;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+    }
+
+    .BlockContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 85%;
+    }
+    
+    .BlockLink {
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .Statistics {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+    }
+
+    .StaContainer {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        width: 100%;
+    }
+
+    .icon {
+        height: 100px;
+        width: 30%;
+        margin-right: 1rem;
+    }
+    .StaNum {
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    
+    .StaName {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    #divRss {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .RssBlock {
+        width: 100%;
+        height: 8rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: white;
+        border-radius: 6px;
+        padding: 1rem;
+        box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .18);
+    }
+
+    .RefContainer {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .RefBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .Subscribe {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        border-top: gray;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .FootContainer {
+        color: white;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .LeftFoot {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .ConInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .RightFoot {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .FootLinkContainer {
+        width: 100%;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .FootLink {
+        margin-right: 1.5rem;
+        margin-left: 0;
+    }
+
+    .IconContainer {
+        margin-top: 1rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: rgb(57, 126, 50);
+        margin-right: 1rem;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

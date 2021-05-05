@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lianatech</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assignment.css">
+    </head>
+
+    <body>
+        <div class="Header">
+            <div class="HeaderContainer">
+                <a class="HeaderLink" href="https://www.lianatech.com/resources/blog.html">
+                    <p class="HeaderLinkTxt">News</p>
+                </a>
+                <a class="HeaderLink" href="">
+                    <p class="HeaderLinkTxt">Intranet</p>
+                </a>
+                <select class="Language">
+                    <option value="eglish">In English</option>
+                    <option value="suomi">Suomi</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="Menu">
+            <div class="MenuContainer">
+                <img class="LianatechLogo" src="https://www.lianatech.com/media/layout/img/logos/lianatech_logo.svg">
+                <a class="Title" href="https://www.lianatech.com/resources/about-us/facts-and-figures.html">
+                    <div class="TitleTxt">Company</div>
+                </a>
+                <a class="Title" href="https://www.lianatech.com/solutions/email-marketing/overview.html">
+                    <div class="TitleTxt">Product</div>
+                </a>
+                <a class="Title" href="https://www.lianatech.com/contact-us/contact.html">
+                    <div class="TitleTxt">Contact us</div>
+                </a>
+            </div>
+            <form class="Search">
+                <input type="text" class="SearchInput" placeholder="Search">
+                <input type="button" class="SearchButton" value="Search">
+            </form>
+        </div>
+
+        <div class="Focus">
+            <p class="FocusTxt">Software fueling digital marketing</p>
+            <input type="button" class="FocusButton" value="Learn more">
+        </div>
+
+        <div class="Parallex">
+            <div class="BlockContainer">
+                <a class="BlockLink" href="https://www.lianatech.com/resources/about-us/facts-and-figures.html">
+                    <div class="Block Company">Company</div>
+                </a>
+                <a class="BlockLink" href="https://www.lianatech.com/solutions/email-marketing/overview.html">
+                    <div class="Block Products">Products</div>
+                </a>
+                <a class="BlockLink" href="https://www.lianatech.com/contact-us/contact.html">
+                    <div class="Block Contact">Contact us</div>
+                </a>
+            </div>
+
+            
+            <div class="Statistics">
+                <div class="StaContainer">
+                    <img src="business.svg" class="icon">
+                    <div class="StaTxt">
+                        <p class="StaNum">3000</p>
+                        <p class="StaName">Clients</p>
+                    </div>
+                </div>
+                <div class="StaContainer">
+                    <img src="employee.svg" class="icon">
+                    <div class="StaTxt">
+                        <p class="StaNum">180</p>
+                        <p class="StaName">Employees</p>
+                    </div>
+                </div>
+                <div class="StaContainer">
+                    <img src="user.svg" class="icon">
+                    <div class="StaTxt">
+                        <p class="StaNum">10000</p>
+                        <p class="StaName">Daily users</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="News">
+                <div class="BlockTitle">Latest news</div>
+                <div id="divRss"></div>
+            </div>
+
+            <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+            <script type="text/javascript" src="FeedEk.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#divRss').FeedEk({
+            FeedUrl: 'https://www.lianatech.com/resources/blog.rss', MaxCount: 3, ShowDesc: false
+            });
+                })
+            </script>
+
+            <div class="References">
+                <div class="BlockTitle">References</div>
+                <div class="RefContainer">
+                    <div class="RefBlock">
+                        <div class="RefPicContainer">
+                            <img class="RefPic" src="http://365imgs.cn/cms/files/16/34/ae6ca9f6931ef10127b075ced21419cd77ba1634.jpg">
+                        </div>
+                        <div class="RefCon">
+                            <p class="RefName">Robert Bosch</p>
+                            <p class="RefDes">Bosch is a multinational engineering and electronics company.</p>
+                        </div>
+                    </div>
+                    <div class="RefBlock">
+                        <div class="RefPicContainer">
+                            <img class="RefPic" src="data:image/png;base64,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">
+                        </div>
+                        <div class="RefCon">
+                            <p class="RefName">The Body Shop</p>
+                            <p class="RefDes">The Body Shop is a glbal beauty brand and it has more than 3,000 stores in more than 60 cuntries.</p>
+                        </div>
+                    </div>
+                    <div class="RefBlock">
+                        <div class="RefPicContainer">
+                            <img class="RefPic" src="https://www.hotelchains.com/public/img/chains/691.png">
+                        </div>
+                        <div class="RefCon">
+                            <p class="RefName">Lapland Hotels</p>
+                            <p class="RefDes">Lapland Hotels is the largest and the most diverse hotel chain in lapland</p>
+                        </div>
+                    </div>
+                    <div class="RefBlock">
+                        <div class="RefPicContainer">
+                            <img class="RefPic" src="https://www.logo.wine/a/logo/IKEA/IKEA-Logo.wine.svg">
+                        </div>
+                        <div class="RefCon">
+                            <p class="RefName">IKEA</p>
+                            <p class="RefDes">IKEA is a multinational furniture store</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Subscribe">
+                <div class="BlockTitle">Subscribe to our newsletter</div>
+                <div class="SubDes">Follow our story and get the latest promotonial news about our products and events.</div>
+                <div class="SubFunc">
+                    <input type="text" placeholder="Your email address" class="SearchInput">
+                    <input type="button" value="Subscribe" class="SearchButton" onclick="Subscripion()">
+                </div>
+            </div>
+
+            <script>    //alert window function
+                function Subscripion() {
+                alert("Thank you for your subscripton!");
+                }
+            </script>
+
+            <div class="Foot">
+                <div class="FootContainer">
+                    <div class="LeftFoot">
+                        <p class="ComName">Liana Technologies</p>
+                        <div class="ConInfo">
+                            <div class="ConContent">
+                                <p class="ConTex duty">Sales and inqiries</p>
+                                <p class="ConTex email">Email: sales@lianatech.com</p>
+                                <p class="ConTex phone">Phone: +358 10 387 7053</p>
+                            </div>
+                            <input type="button" value="Contact us" class="SearchButton">
+                        </div>
+                    </div>
+                    <div class="RightFoot">
+                        <div class="FootLinkContainer">
+                            <a class="FootLink" href="https://www.lianatech.com/resources/about-us/facts-and-figures.html">
+                                <div class="FootLinkTxt">Company</div>
+                            </a>
+                            <a class="FootLink" href="https://www.lianatech.com/solutions/email-marketing/overview.html">
+                                <div class="FootLinkTxt">Products</div>
+                            </a>
+                            <a class="FootLink" href="https://www.lianatech.com/contact-us/contact.html">
+                                <div class="FootLinkTxt">Contact us</div>
+                            </a>
+                            <a class="FootLink" href="https://www.lianatech.com/resources/blog.html">
+                                <div class="FootLinkTxt">News</div>
+                            </a>
+                            <a class="FootLink" href="">
+                                <div class="FootLinkTxt">Intranet</div>
+                            </a>
+                        </div>
+                        <div class="SocialMedia">
+                            <div class="IconContainer">
+                                <img class="Icon Fb" src="facebook.png">
+                            </div>
+                            <div class="IconContainer">
+                                <img class="Icon Tw" src="twitter.png">
+                            </div>
+                            <div class="IconContainer">
+                                <img class="Icon Lki" src="linkedin.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
